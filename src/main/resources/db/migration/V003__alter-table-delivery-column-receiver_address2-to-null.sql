@@ -1,0 +1,1 @@
+alter table delivery modify receiver_address2 varchar(60) null;
