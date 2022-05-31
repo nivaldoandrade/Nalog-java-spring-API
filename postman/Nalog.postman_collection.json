@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "a1467f5e-7db3-4c33-8acf-2e9e54a2ffec",
+		"name": "Nalog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Client - GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/customers/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customers",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Client - DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/customers/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customers",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer - POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jonh Doe\",\r\n    \"email\": \"john.doe@nasa.com.br\",\r\n    \"telephone\": \"1122222-1111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/customers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer - PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jonh Doe2\",\r\n    \"email\": \"john.doe2@nasa.com.br\",\r\n    \"telephone\": \"1133333-2222\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/customers/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customers",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Client - GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/customers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delivery",
+			"item": [
+				{
+					"name": "Delivery - POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer\": {\r\n        \"id\": 4\r\n    },\r\n    \"receiver\": {\r\n        \"name\": \"Jonh Doe\",\r\n        \"address\": \"Rua x\",\r\n        \"number\": \"60\",\r\n        \"district\": \"Bairro\"\r\n    },\r\n    \"tax\": 400.50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/deliveries",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deliveries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delivery - PUT FINISH",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/deliveries/2/finishing",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deliveries",
+								"2",
+								"finishing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delivery - PUT CANCEL",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/deliveries/2/canceling",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deliveries",
+								"2",
+								"canceling"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delivery - GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/deliveries/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deliveries",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delivery - GET ALL",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/deliveries",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deliveries"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accurrence",
+			"item": [
+				{
+					"name": "Accurrence - GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/accurrences/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accurrences",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accurrence - GET ALL",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/deliveries/1/accurrences",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deliveries",
+								"1",
+								"accurrences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accurrence - POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"describe\": \"describe\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/deliveries/1/accurrences",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deliveries",
+								"1",
+								"accurrences"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
