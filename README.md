@@ -91,7 +91,7 @@ Se caso preferir, utilize o [postman](https://www.postman.com/) para realizar as
 ### Importar collections para postman
 
 Tutorial de como importar collections para postman no [Importing and exporting data.](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/)  
-Download da [Collection.](https://github.com/nivaldoandrade/nalog-java-spring-api.git/blob/master/postman/Nalog.postman_collection.json)
+Download da [Collection.]([https://github.com/nivaldoandrade/nalog-java-spring-api.git/blob/master/postman/Nalog.postman_collection.json](https://github.com/nivaldoandrade/nalog-java-spring-api/blob/main/postman/Nalog.postman_collection.json))
 
 ## **Exemplo do request body válido**
 
