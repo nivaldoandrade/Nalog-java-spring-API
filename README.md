@@ -97,7 +97,7 @@ Download da [Collection.](https://github.com/nivaldoandrade/nalog-java-spring-ap
 
 ---
 
-##### <a id="customerPost">Create Customer -> /customers</a>
+##### Create Customer -> /customers {#customerPost}
 
 ```json
 {
