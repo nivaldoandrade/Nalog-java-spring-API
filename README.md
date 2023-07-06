@@ -56,13 +56,13 @@ Seguir o tutorial [How to import Spring Boot project in Eclipse/STS IDE.](https:
 
 ### Cliente(Customer)
 
-| Método | Url             | Descrição                    | Exemplo do request body válido |
-| ------ | --------------- | ---------------------------- | ------------------------------ |
-| GET    | /customers/{id} | Obter um cliente pelo id     |                                |
-| GET    | /customers      | Obter todos os clientes      |                                |
-| POST   | /customers      | Criar um cliente             | [JSON](#customerPost)          |
-| PUT    | /customers/{id} | Atualizar um cliente pelo id | [JSON](#customerPut)           |
-| DELETE | /customers/{id} | Deletar um cliente pelo id   |                                |
+| Método | Url             | Descrição                    | Exemplo do request body válido                |
+| ------ | --------------- | ---------------------------- | --------------------------------------------- |
+| GET    | /customers/{id} | Obter um cliente pelo id     |                                               |
+| GET    | /customers      | Obter todos os clientes      |                                               |
+| POST   | /customers      | Criar um cliente             | [JSON](#create-customer---customers)          |
+| PUT    | /customers/{id} | Atualizar um cliente pelo id | [JSON](#customerPut)                          |
+| DELETE | /customers/{id} | Deletar um cliente pelo id   |                                               |
 
 ### Entrega(Delivery)
 
@@ -97,7 +97,7 @@ Download da [Collection.](https://github.com/nivaldoandrade/nalog-java-spring-ap
 
 ---
 
-##### Create Customer -> /customers {#customerPost}
+##### Create Customer -> /customers
 
 ```json
 {
